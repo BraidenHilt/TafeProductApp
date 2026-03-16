@@ -37,6 +37,9 @@ namespace ProductApps
 
                 double totalCharge = Convert.ToDouble(cProduct.TotalPayment) + 25;
                 totalChargeTextBox.Text = totalCharge.ToString();
+
+                double wrapCharge = totalCharge + 5;
+                totalWrapChargeTextBox.Text = wrapCharge.ToString();
             }
             catch (FormatException)
             {
