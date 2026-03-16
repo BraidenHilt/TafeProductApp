@@ -40,6 +40,10 @@ namespace ProductApps
 
                 double wrapCharge = totalCharge + 5;
                 totalWrapChargeTextBox.Text = wrapCharge.ToString();
+
+                double gstCharge = (wrapCharge) * 1.1;
+                totalGSTChargeTextBox.Text = gstCharge.ToString();
+
             }
             catch (FormatException)
             {
